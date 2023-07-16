@@ -5,6 +5,7 @@ set -U fish_greeting "🐟"
 set -gx EDITOR nvim
 set -gx PATH "$HOME/.cargo/bin" $PATH
 set -gx GPG_TTY $(tty)
+stty erase '^?'
 
 if test $DISTRO = darwin
     fish_add_path -U /opt/homebrew/bin
@@ -20,6 +21,7 @@ end
 abbr reload 'source ~/.config/fish/config.fish'
 abbr config 'nvim ~/.config/fish/config.fish'
 
+abbr ac 'aria2c -x16'
 abbr ta 'tmux attach'
 abbr find fd
 abbr cat bat
