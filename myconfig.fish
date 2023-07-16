@@ -54,9 +54,11 @@ abbr R radian
 abbr r radian
 
 abbr ca 'conda activate'
+abbr cl 'conda env list'
 abbr ci 'mamba install'
 abbr mi 'mamba install'
 abbr cr 'conda remove --all -n '
+abbr pie 'pip install -e .'
 
 thefuck --alias | source
 zoxide init fish | source
