@@ -1,0 +1,31 @@
+[directory]
+style = "cyan"
+
+[cmd_duration]
+style = "yellow"
+
+[conda]
+symbol = " "
+
+[git_status]
+modified="M"
+renamed="R"
+deleted="D"
+staged="S"
+style = "bold orange"
+
+[python]
+disabled=true
+
+[rust]
+symbol = "🦀 "
+style = "fg:#dd5b29"
+
+[nodejs]
+symbol = "   "
+
+[package]
+disabled=true
+
+[battery]
+disabled=true
