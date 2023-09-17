@@ -25,9 +25,9 @@ abbr ac 'aria2c -x16'
 abbr ta 'tmux attach'
 abbr find fd
 abbr cat bat
-abbr ls exa
-abbr la 'exa -la'
-abbr lt 'exa --tree -L2 --long'
+abbr ls lsd
+abbr la 'lsd -la'
+abbr lt 'lsd --tree -L2 --long'
 abbr cx 'chmod +x'
 abbr vim nvim
 abbr cd. 'cd ../'
