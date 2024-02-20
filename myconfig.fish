@@ -89,7 +89,7 @@ set -U FZF_CD_COMMAND $FZF_FIND_FILE_COMMAND
 set -U FZF_CD_WITH_HIDDEN_COMMAND $FZF_FIND_FILE_COMMAND
 set -U FZF_OPEN_COMMAND $FZF_FIND_FILE_COMMAND
 
-set -U nvm_default_version latest
+set -U nvm_default_version 20
 
 string match -q "$TERM_PROGRAM" vscode
 and . (code --locate-shell-integration-path fish)
