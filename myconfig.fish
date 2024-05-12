@@ -19,7 +19,7 @@ if test $DISTRO = darwin
 end
 
 abbr reload 'source ~/.config/fish/config.fish'
-abbr config 'nvim ~/.config/fish/config.fish'
+abbr config 'nvim ~/.dotfiles/myconfig.fish'
 
 abbr ac 'aria2c -x16'
 abbr ta 'tmux attach'
@@ -45,9 +45,10 @@ abbr grb 'git rebase'
 abbr gsh 'git stash'
 abbr gsp 'git stash pop'
 abbr gcm 'git commit -m'
-abbr nrd 'npm run dev'
-abbr nrp 'npm run preview'
-abbr nrb 'npm run build'
+abbr gmm 'git merge origin/main'
+abbr nrd 'pnpm run dev'
+abbr nrp 'pnpm run preview'
+abbr nrb 'pnpm run build'
 abbr ff fuck
 abbr gl 'lucky_commit (printf "%07d\n" (git rev-list HEAD --count))'
 
