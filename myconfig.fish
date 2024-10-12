@@ -28,6 +28,7 @@ abbr cat bat
 abbr ls lsd
 abbr la 'lsd -la'
 abbr lt 'lsd -ltr'
+abbr lr 'lsd -ltr'
 abbr cx 'chmod +x'
 abbr vim nvim
 abbr cd. 'cd ../'
