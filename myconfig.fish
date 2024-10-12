@@ -34,17 +34,20 @@ abbr cd. 'cd ../'
 
 abbr --add size --set-cursor="%" 'fd --extension % --exec stat -c %n,%s {} \;'
 abbr gc 'git clone'
-abbr gco 'git checkout'
+abbr gcb 'git checkout -b'
+abbr gco 'git checkout -m'
 abbr gsw 'git switch'
 abbr gph 'git push; git push --tags'
+abbr gdd 'git branch --merged | grep -Ev "(^\*|master|main|dev|prod)" | xargs git branch -d'
 abbr gpf 'git push --force-with-lease'
 abbr gpu 'git pull'
+abbr gfa 'git fetch --all'
 abbr gps 'git push'
 abbr gbd 'git branch --delete'
 abbr grb 'git rebase'
 abbr gsh 'git stash'
 abbr gsp 'git stash pop'
-abbr gcm 'git commit -m'
+# abbr gcm 'git commit -m'
 abbr gmm 'git merge origin/main'
 abbr nrd 'pnpm run dev'
 abbr nrp 'pnpm run preview'
@@ -91,7 +94,7 @@ set -U FZF_CD_COMMAND $FZF_FIND_FILE_COMMAND
 set -U FZF_CD_WITH_HIDDEN_COMMAND $FZF_FIND_FILE_COMMAND
 set -U FZF_OPEN_COMMAND $FZF_FIND_FILE_COMMAND
 
-set -U nvm_default_version 20
+set -U nvm_default_version 22
 
 string match -q "$TERM_PROGRAM" vscode
 and . (code --locate-shell-integration-path fish)
