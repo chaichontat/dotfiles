@@ -6,6 +6,8 @@ set -gx EDITOR nvim
 set -gx PATH "$HOME/.cargo/bin" $PATH
 set -gx GPG_TTY $(tty)
 stty erase '^?'
+fish_add_path /home/chaichontat/.juliaup/bin
+fish_add_path /home/chaichontat/baysor/baysor/bin
 
 if test $DISTRO = darwin
     fish_add_path -U /opt/homebrew/bin
@@ -32,6 +34,8 @@ abbr lr 'lsd -ltr'
 abbr cx 'chmod +x'
 abbr vim nvim
 abbr cd. 'cd ../'
+abbr tp trash-put
+abbr rt trash-put
 
 abbr --add size --set-cursor="%" 'fd --extension % --exec stat -c %n,%s {} \;'
 abbr gc 'git clone'
@@ -48,7 +52,7 @@ abbr gbd 'git branch --delete'
 abbr grb 'git rebase'
 abbr gsh 'git stash'
 abbr gsp 'git stash pop'
-# abbr gcm 'git commit -m'
+abbr gcm 'git commit -m'
 abbr gmm 'git merge origin/main'
 abbr nrd 'pnpm run dev'
 abbr nrp 'pnpm run preview'
@@ -66,7 +70,6 @@ abbr mi 'mamba install'
 abbr cr 'conda remove --all -n '
 abbr pie 'pip install -e .'
 
-thefuck --alias | source
 zoxide init fish | source
 starship init fish | source
 
